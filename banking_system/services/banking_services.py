@@ -1,5 +1,5 @@
-from banking_system.models.user import User
-from banking_system.utils.exceptions import UserNotFoundError
+from models.user import User
+from utils.exceptions import UserNotFoundError
 
 class BankingService: 
     # 문제4-1. 생성자 구현
@@ -45,7 +45,7 @@ class BankingService:
                 print(f"잘못된 입력입니다: {e}")
             except InsufficientFundsError as e: 
                 print(f"⛔️ 잔고 부족: {e}")
-            except NegativeamountError as e: 
+            except NegativeAmountError as e: 
                 print(f"⛔️ 입력 금액 오류: {e}")
             except UserNotFoundError as e: 
                 print(f"⛔️ 사용자 오류: {e}")

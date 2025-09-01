@@ -1,6 +1,6 @@
-from banking_system.models.transaction import Transaction
-from banking_system.utils.decorators import validate_transaction
-from banking_system.utils.exceptions import InsufficientFundsError, NegativeAmountError
+from models.transaction import Transaction
+from utils.decorators import validate_transaction
+from utils.exceptions import InsufficientFundsError, NegativeAmountError
 
 class Account: 
     bank_name = "BujaBank"
